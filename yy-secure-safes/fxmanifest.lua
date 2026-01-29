@@ -30,15 +30,6 @@ files {
     'html/sounds/*.mp3'
 }
 
-escrow_ignore {
-    'License.txt',
-    'png/*.png',
-    'shared/config.lua',
-    'sql/create_secure_safes.sql',
-    'html/sounds/README.txt',
-    'html/sounds/*.ogg',
-    'html/sounds/*.mp3'
-}
-
 export 'useSafe'
 server_export 'useSafe'
+
