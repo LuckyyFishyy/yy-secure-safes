@@ -1,0 +1,64 @@
+END-USER LICENSE AGREEMENT (EULA)
+
+This End-User License Agreement is a legal agreement between you and LuckyyFishyy regarding the use of our digital product titled “Secure Safes” ("Software" or "Script").
+
+By purchasing, downloading, installing, or using the Software, you agree to be bound by the terms and conditions of this Agreement.
+
+---
+
+1. LICENSE GRANT  
+LuckyyFishyy grants you a limited, non-exclusive, revocable license to use the Software on one (1) FiveM server operated by you.
+
+You are permitted to transfer the script between your own FiveM Keymaster accounts if necessary. However, this license is intended solely for your personal use, and may not be shared, resold, or provided to any third party or external entity. The license must remain under the control of the original purchaser at all times.
+
+---
+
+2. RESTRICTIONS  
+You may NOT:
+- Redistribute, resell, sublicense, or share the Software.
+- Modify, decrypt, or attempt to reverse-engineer any protected or obfuscated parts of the Software.
+- Upload or distribute the Software on any third-party platforms, leaks websites, or unauthorized forums.
+- Use the Software on more than one server at a time without purchasing additional licenses.
+
+---
+
+3. OWNERSHIP & COPYRIGHT  
+The Software remains the intellectual property of LuckyyFishyy. You are purchasing a license to use the Software, not ownership of its code or assets.
+
+---
+
+4. WARRANTY DISCLAIMER  
+The Software is provided “as is,” without any warranties, express or implied. We do not guarantee the Software will function without error or be compatible with every environment.
+
+---
+
+5. LIMITATION OF LIABILITY  
+LuckyyFishyy is not liable for any damages resulting from the use, misuse, or inability to use the Software, including server performance issues, data loss, or downtime.
+
+---
+
+6. TERMINATION  
+This license will be terminated immediately if you violate any terms of this Agreement. Upon termination, you must delete all copies of the Software and cease all use.
+
+---
+
+7. REFUNDS  
+Due to the nature of digital goods, all sales are final. No refunds will be issued under any circumstances after purchase.
+
+---
+
+8. UPDATES & SUPPORT  
+LuckyyFishyy may release updates, fixes, or improvements at our discretion. Access to updates may require proof of valid purchase.
+
+---
+
+9. CHANGES TO THIS AGREEMENT  
+We reserve the right to update this Agreement at any time. Continued use of the Software after changes constitutes acceptance of the revised terms.
+
+---
+
+If you do not agree to this Agreement, do not install, use, or distribute the Software.
+
+For support, please contact us at: luckyyfishyyscripts@gmail.com / https://discord.gg/kv8rxNEETn
+
+© 2025 LuckyyFishyy. All rights reserved.

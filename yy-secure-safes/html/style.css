@@ -1,0 +1,120 @@
+body { margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; }
+#app.hidden { display:none; }
+#app { position: fixed; inset:0; display:flex; align-items:center; justify-content:center; z-index:9999; }
+
+.code-container {
+    background: rgba(30, 30, 30, 0.95);
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    padding: 20px;
+    color: #ccc;
+}
+
+.code-display {
+    background: rgba(10, 10, 10, 0.9);
+    border: 1px solid #00ff00;
+    border-radius: 4px;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 8px;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    color: #00ff00;
+}
+
+.code-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.code-pad button {
+    padding: 12px;
+    background: rgba(50, 50, 50, 0.8);
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.code-pad button:hover {
+    background: #00ff00;
+    color: #000;
+    border-color: #00ff00;
+    font-weight: bold;
+}
+
+#enter {
+    background: #00ff00;
+    color: #000;
+    border-color: #00ff00;
+    font-weight: bold;
+}
+
+#enter:hover {
+    background: #1aff1a;
+}
+
+#back {
+    color: #ccc;
+}
+
+.actions {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.actions .cancel-btn {
+    padding: 8px 14px;
+    background: #222;
+    border: 1px solid #333;
+    color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 13px;
+}
+
+.actions .cancel-btn:hover {
+    background: #00ff00;
+    color: #000;
+    border-color: #00ff00;
+    font-weight: bold;
+}
+
+.hidden { display: none; }
+
+.placement-hud {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 9998;
+    width: 260px;
+    background: rgba(30, 30, 30, 0.95);
+    border: 2px solid #00ff00;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    padding: 14px;
+    color: #ccc;
+}
+
+.placement-line {
+    font-size: 13px;
+    margin: 6px 0;
+    color: #bbb;
+}
+
+.key-hint {
+    display: inline-block;
+    padding: 2px 6px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background: rgba(50, 50, 50, 0.8);
+    color: #ccc;
+    font-size: 12px;
+    margin-right: 6px;
+}

@@ -1,0 +1,158 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Safe System</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Settings Menu Styles */
+        #settingsMenu {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(30, 30, 30, 0.95);
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            width: 350px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            padding: 20px;
+            z-index: 1000;
+        }
+        
+        #settingsMenu.active {
+            display: block;
+        }
+        
+        .menu-title {
+            color: #00ff00;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 10px;
+        }
+        
+        .menu-option {
+            padding: 12px;
+            margin: 5px 0;
+            background: rgba(50, 50, 50, 0.8);
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #ccc;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 14px;
+        }
+        
+        .menu-option:hover,
+        .menu-option.selected {
+            background: #00ff00;
+            color: #000;
+            border-color: #00ff00;
+            font-weight: bold;
+        }
+        
+        .menu-option-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .menu-option-desc {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        
+        .menu-footer {
+            border-top: 1px solid #333;
+            margin-top: 10px;
+            padding-top: 10px;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Passcode Panel -->
+    <div id="app" class="hidden">
+        <div class="code-container">
+            <div class="menu-title">Safe Passcode 🔐</div>
+            <div class="code-display" id="display">----</div>
+            <div class="code-pad">
+                <button class="num">1</button>
+                <button class="num">2</button>
+                <button class="num">3</button>
+                <button class="num">4</button>
+                <button class="num">5</button>
+                <button class="num">6</button>
+                <button class="num">7</button>
+                <button class="num">8</button>
+                <button class="num">9</button>
+                <button id="back">Back</button>
+                <button class="num">0</button>
+                <button id="enter">Enter</button>
+            </div>
+            <div class="menu-footer">Enter your code, then press Enter. Cancel to close.</div>
+            <div class="actions">
+                <button id="cancel" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Menu -->
+    <div id="settingsMenu">
+        <div class="menu-title">Safe Settings ⚙️</div>
+        <div class="menu-option" data-action="change-passcode">
+            <span class="menu-option-title">Change Passcode 🔁</span>
+            <span class="menu-option-desc">Set a new passcode for your safe</span>
+        </div>
+        <div class="menu-option" id="keyOption" data-action="craft-key">
+            <span class="menu-option-title">Craft Safe Key 🔑</span>
+            <span class="menu-option-desc">Turn a blank key into a safe key</span>
+        </div>
+        <div class="menu-option" id="upgradeOption" data-action="upgrade-storage">
+            <span class="menu-option-title">Upgrade Storage 📦</span>
+            <span class="menu-option-desc">Use an upgrade item to expand storage</span>
+        </div>
+        <div class="menu-option" id="removeUpgradeOption" data-action="remove-upgrade">
+            <span class="menu-option-title">Remove Upgrade ➖</span>
+            <span class="menu-option-desc">Remove the last upgrade and reclaim the item</span>
+        </div>
+        <div class="menu-option" id="sealOption" data-action="vault-seal">
+            <span class="menu-option-title">Apply Vault Seal 🧪</span>
+            <span class="menu-option-desc">Temporarily blocks breach attempts</span>
+        </div>
+        <div class="menu-option" id="antiDrillOption" data-action="anti-drill">
+            <span class="menu-option-title">Install Anti-Drill Plate 🛡️</span>
+            <span class="menu-option-desc">Disables drilling on this safe</span>
+        </div>
+        <div class="menu-option" id="alarmOption" data-action="install-alarm">
+            <span class="menu-option-title">Install Alarm Module 🚨</span>
+            <span class="menu-option-desc">Adds a breach alarm with a warning light</span>
+        </div>
+        <div class="menu-option" id="removeAlarmOption" data-action="remove-alarm">
+            <span class="menu-option-title">Remove Alarm Module 🧰</span>
+            <span class="menu-option-desc">Remove the alarm module from this safe</span>
+        </div>
+        <div class="menu-option" data-action="move-safe">
+            <span class="menu-option-title">Move Safe 📦</span>
+            <span class="menu-option-desc">Relocate your safe (must be empty)</span>
+        </div>
+        <div class="menu-footer">Press [UP/DOWN] to navigate, [ENTER] to select, [ESC] to close</div>
+    </div>
+
+    <div id="placementHelp" class="placement-hud hidden">
+        <div class="menu-title">Placement 📍</div>
+        <div class="placement-line">Aim to position the safe.</div>
+        <div class="placement-line"><span class="key-hint">LEFT/RIGHT</span>Rotate</div>
+        <div class="placement-line"><span class="key-hint">ENTER</span>Place</div>
+        <div class="placement-line"><span class="key-hint">BACKSPACE</span>Cancel</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
