@@ -20,3 +20,5 @@ IMPORTANT: Read the gitbook for Installation
 Showcase Video: https://www.youtube.com/watch?v=XKmn_I5oSdw
 
 Gitbook: https://luckyyfishyy.gitbook.io/luckyyfishyy-docs/
+
+Discord for Support: https://discord.gg/PqaFRdkpxM
