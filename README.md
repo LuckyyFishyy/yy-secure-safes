@@ -15,6 +15,8 @@ Main features:
 
 It’s designed to be easy to configure and fully uses ox_target + ox_inventory.
 
+IMPORTANT: Read the gitbook for Installation
+
 Showcase Video: https://www.youtube.com/watch?v=XKmn_I5oSdw
 
 Gitbook: https://luckyyfishyy.gitbook.io/luckyyfishyy-docs/
